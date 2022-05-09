@@ -1,0 +1,557 @@
+@import '../base';
+
+h1 {
+    margin: 0; 
+    padding: 50px 0 100px;
+    overflow: hidden;
+}
+a > button {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    line-height: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $basic-green;
+    border: 1px solid $basic-green;
+    font-family: 'Oswald', sans-serif;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: #fff;
+        color: $basic-green;
+    }
+}
+
+// Navbar
+#nav {
+    position: relative !important;
+    background-color: #fff !important;
+}
+.nav-link {
+    color: #111 !important;
+    &.active {
+        border-bottom: 2px solid $basic-green;
+    }
+}
+
+.col-md-3 {
+    padding: 70px 40px 70px; 
+    overflow: visible !important;
+}
+
+.card {
+    height: 440px;
+    overflow: visible !important;
+    background-color: $basic-grey;
+    padding: 40px;
+    border-radius: 0;
+    border: none;
+
+    > img {
+        display: block;
+        width: 162px;
+        margin: -100px auto 0;
+    }
+    > h4 {
+        color: #222;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        padding: 20px 3px;
+    }
+    > table > tbody > tr {
+        color: $special-dark-grey;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        > td {
+            text-align: right;
+            padding: 5px 0 9px;
+        }
+    }
+    > a > button {
+        display: block;
+        margin: 30px auto 0;
+    }
+    > * {
+        overflow: hidden;
+    }
+}
+.lg-cans {
+    width: 183px !important;
+    margin: -140px 0 0 -13px !important;
+}
+table {
+    width: 100%;
+}
+tr {
+    border-bottom: 1px solid #cdcdcd;
+}
+.plus.card {
+    background-color: #fff;
+    border: 2px solid $basic-grey;
+    text-align: center;
+
+    > img {
+        display: block;
+        width: 60px;
+        margin: 0px auto 14px;
+    }
+    > h4 {
+        font-size: 20px;
+        line-height: 22px;
+        color: #111;
+    }
+    > p {
+        line-height: 18px;
+        margin: 9px -10px 75px;
+        color: $special-dark-grey;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    > a > button {
+        background-color: $basic-grey;
+        color: $special-dark-grey;
+        border: 2px solid $basic-grey;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+}
+
+#more-products {
+    overflow: visible !important;
+    border-top: 2px solid $basic-green;
+    margin: 50px 0 0;
+    > div {
+        overflow: visible !important;
+    }
+}
+h2 {
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fff;
+    margin: -25px -40px 80px;
+    padding: 0 40px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.col-md-9 > table > tbody > tr { 
+    color: $special-dark-grey;
+    &.tr-b-t {
+        border-top: 1px solid #cdcdcd;
+    }
+    > th {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    > td > a > button {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+.tr-mobile, .th-mobile {
+    display: none;
+}
+
+.gift-block {
+    padding: 5px 0 80px 70px;
+}
+.gift-card {
+    min-width: 250px;
+    min-height: 290px;
+    margin: 0 auto;
+    padding: 50px 40px 0;
+    text-align: center;
+    background-image: url(../../img/catalog-pics/gift-photo-desktop.png);
+    @include setBgImg;
+
+    > p {
+        color: #fff;
+        line-height: 20px;
+        margin-top: 50px;
+    }
+}
+
+// min-width: 1200px
+@media only screen and (max-width: 1399px) {
+    
+    .col-md-3 {
+        padding: 70px 20px; 
+    }
+    .card > img {
+        width: 155px;
+        margin: -90px auto 0;
+    }
+    .lg-cans {
+        width: 168px !important;
+        margin: -121px 0 0 -5px !important;
+    }
+    .plus.card > p {
+        margin: 8px 10px 55px;
+    }
+    .gift-block {
+        padding: 0 0 80px 30px;
+    }
+}
+// min-width: 991px
+@media only screen and (max-width: 1199px) {  
+    .col-md-3 {
+        padding: 50px 15px; 
+    }
+    .card {
+        height: 410px;
+        padding: 30px;
+        > img {
+            width: 130px;
+            margin: -80px auto 0;
+        }
+    }
+    .lg-cans {
+        width: 148px !important;
+        margin: -115px 0 0 -5px !important;
+    }
+    .plus.card {
+        > img {
+            display: block;
+            width: 50px;
+            margin: 0px auto 10px;
+        }
+        > p {
+            margin: 8px 10px 45px;
+        }
+    }
+    h2 {
+        margin: -25px -15px 80px;
+        padding: 0 15px;
+    }
+    .col-md-9 > table > tbody > tr > td > a > button {
+        margin: 10px 0;
+    }
+    .gift-block {
+        padding: 0 0 80px 30px;
+    }
+    .gift-card {
+        min-height: auto;
+        min-width: auto;
+        width: 200px;
+        height: 260px;
+        padding: 30px 25px 0;
+        > p {
+            margin-top: 40px;
+        }
+    }
+}
+
+// Tablet -v
+@media only screen and (max-width: 991px) {  
+    .col-md-3 {
+        padding: 70px 30px; 
+    }
+    .card {
+        height: 450px;
+        padding: 40px;
+        > img {
+            width: 160px;
+            margin: -90px auto 0;
+        }
+        h4 {
+            padding: 20px 25px;
+        }
+    }
+    .lg-cans {
+        width: 168px !important;
+        margin: -117px 0 0 15px !important;
+    }
+    .plus.card {
+        > img {
+            width: 60px;
+            margin: 0 auto 20px;
+        }
+        > p {
+            margin: 10px 20px 55px;
+        }
+    }
+    .col-md-9 {
+        width: 100%;
+        > table > tbody > tr { 
+            border: 1px solid #cdcdcd;
+            
+            > th {
+                padding: 25px 0 10px 35px;
+            }
+
+            > td > a > button {
+                margin: 15px auto;
+                width: 90%;
+                display: block;
+            }
+            > .btn-td-desktop {
+                display: none;
+            }
+        }
+    }
+    .tr-b-t {
+        border-bottom: none !important;
+        > td {
+            padding: 25px 0 10px;
+        }
+    }
+    .tr-mobile {
+        display: table-row;
+        border-top: none !important;
+        > td {
+            padding-bottom: 20px;
+        }
+    }
+    .gift-block {
+        padding: 0;
+        margin: 70px 0;
+        width: 100%;
+    }
+    .gift-card {
+        width: 100%;
+        height: 200px;
+        text-align: left;
+        padding: 57px 80px 0;
+        margin: 0;
+        background-image: url(../../img/catalog-pics/gift-photo-tablet.png);
+        
+        > img {
+            width: 80px;
+        }
+        > p {
+            width: 160px;
+            color: #fff;
+            line-height: 20px;
+            float: right;
+            margin: 10px 30px 0 0;
+        }
+    }
+    .map-card {
+        background-color: $basic-grey;
+    }
+}
+
+// Mobile -v
+@media only screen and (max-width: 767px) { 
+    #nav {
+        border-bottom: 1px solid #d9d9d9;
+    } 
+    h1 {
+        text-align: left;
+        color: $dark-black;
+        padding: 30px 0 40px;
+    }
+    .col-md-3 {
+        padding: 0;
+    }
+
+    .card {
+        border-bottom: .5px solid #ebebeb;
+        border-top: .5px solid #ebebeb;
+        background-color: #fff;
+        position: relative;
+        height: 305px;
+        > img {
+            width: 125px;
+            margin: 15px 0 0 8%;
+            padding: 0;
+            position: absolute;
+        }
+        > h4 {
+            position: absolute;
+            width: 150px;
+            top: 20px;
+            right: 110px;
+            text-align: left;
+        }
+        > table {
+            width: 37%;
+            position: absolute;
+            top: 120px;
+            right: 45px;
+            > tbody > tr {
+                border: none !important;
+                > td {
+                    text-align: right;
+                    padding: 0;
+                }
+            } 
+        }
+
+        > a > button {
+            margin-top: 180px;
+        }
+    }
+
+    .lg-cans {
+        width: 135px !important;
+        margin: 0px 0 0 7% !important;
+    }
+
+    .plus.card {
+        border: none;
+        border-bottom: 1px solid #ebebeb;
+        > img {
+            margin-left: 50%;
+            transform: translateX(-100%);
+        }
+        > h4 {
+            width: 60%;
+            top: 100px;
+            left: 100px;
+        }
+        > p {
+            margin: 125px 0 0;
+        }
+        > a > button {
+            margin: 30px 0;
+        }
+    }
+
+    h2 {
+        margin: -25px -15px 40px;
+    }
+
+    .col-md-9 > table > tbody > tr > th {
+        padding: 25px 0 10px 25px;
+    }
+    .tr-b-t > td {
+        padding: 25px 15px 10px 0;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 575px) {
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .card {
+        padding: 20px;
+        height: 280px;
+        
+        > h4 {
+            top: 15px;
+            right: 75px;
+        }
+        > table {
+            width: 170px;
+            right: 30px;
+            top: 100px;
+        }
+    }
+    .lg-cans {
+        width: 130px !important;
+        margin: 15px 0 0 7% !important;
+    }
+
+    .plus.card {
+        > img {
+            margin-left: 52%;
+        }
+        > h4 {
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+        > p {
+            margin: 140px 0 0;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: -20px -5px 40px;
+        padding: 0 5px;
+    }
+    .col-md-9 > table > tbody > tr {
+        > th {
+            font-size: 16px;   
+        }
+        > td {
+            font-size: 14px;
+        }
+    }
+
+    .gift-card {
+        height: 290px;
+        background-image: url(../../img/catalog-pics/gift-photo-mobile.png);
+        padding: 50px;
+        > img {
+            display: block;
+            margin: 0 auto;
+        }
+        > p {
+            float: none;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin: 40px auto 0;
+        }
+    }
+} // min-width: 400px
+
+@media only screen and (max-width: 400px) {
+    .card {
+        > img {
+            width: 105px;
+            margin: 25px 0 0 4%;
+        }
+        > h4 {
+            font-size: 18px;
+            right: 20%;
+            padding: 20px 0 10px;
+            width: 30%;
+        }
+        > table {
+            width: 43%;
+            right: 7%;
+            > tbody > tr {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+    .lg-cans {
+        width: 118px !important;
+        margin: 10px 0 0 !important;
+    }
+    .plus.card {
+        height: 250px;
+        > img {
+            display: block;
+            width: 40px;
+            margin: 0 auto 0 50%;
+        }
+        > h4 {
+            font-size: 16px;
+            top: 60px;
+        }
+        > p {
+            margin: 100px 0 0;
+            font-size: 14.4px;
+        }
+    }
+    .tr-b-t {
+        > td {
+            padding: 25px 15px 10px 18px;
+        }
+        > th {
+            display: none;
+            padding: 25px 0 0px 18px !important;
+        } 
+    }
+    .th-mobile {
+        display: table-row;
+        border-bottom: none !important;
+    }
+}

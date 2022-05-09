@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | Cat Energy</title>
+
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./aos/dist/aos.css">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./styles/main/main.css">
+    <link rel="stylesheet" href="./styles/forms/styled.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVIGATION BAR -->
+        <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid container ">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./img/logo-desktop.png" alt="Free Frost">
+                </a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html"> главная </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catalog.html"> Каталог продукции </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"> подбор программы </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- NAVIGATION BAR End -->
+        <div class="clr"></div>
+    </header>
+
+    <div class="clr"></div>
+
+    <main>
+        <form id="form" action="">
+
+            <section class="chooseProgram">
+                <div class="container">
+                    <h1>Подбор программы</h1>
+                    <p>
+                        Заполните анкету, и мы подберем
+                        программу питания для вашего кота
+                    </p>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>ИМЯ:*
+                                    <input type="text" placeholder="БАРСИК" required>
+                                </label> <br>
+                                <label>Вес (кг):*
+                                    <input type="number" placeholder="7" min="0" maxlength="2" required>
+                                </label> <br>
+                                <label>Возраст (лет):
+                                    <input class=" phone-input" type="number" placeholder="7" min="0" maxlength="2">
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-card">
+                                    <label for="program">
+                                        <input type="radio" for="program" name="radios" id="firstRadio">
+                                        похудение
+                                        <span></span>
+                                    </label> <br>
+                                    <label for="program">
+                                        <input type="radio" for="program" name="radios" id="secondRadio">
+                                        Набор массы
+                                        <span></span>
+                                    </label> <br>
+                                    <label for="program">
+                                        <input type="radio" for="program" name="radios" id="thirdRadio">
+                                        Не знаю (Нужен ваш совет)
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clr"></div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="container">
+                    <h2>Контактные данные (владельца кота)</h2>
+                    <div class="clr"></div>
+                    <div class="col-md-6">
+                        <label for="email">E-mail:*
+                            <input type="email" placeholder="кuklachev@gmail.com" required>
+                            <img class="icon-email" src="./img/icon_email.png" alt="">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone">Телефон:*
+                            <input type="tel" placeholder="8 (960) 900-60-90" min="0" minlength="8" maxlength="20"
+                                required>
+                            <img width="20" src="./img/phone 1.png" alt="">
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class=" comments">
+                <div class="container">
+                    <h2>Комментарий</h2>
+
+                    <textarea name="comment" id="commentArea" cols="120" rows="10"
+                        placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ ЛОТА"></textarea>
+                </div>
+            </section>
+
+            <section class="moreOptions">
+                <div class="container">
+                    <h2>Дополнительно</h2>
+
+                    <div class="clr"></div>
+                    <div class="col-md-3">
+                        <input type="checkbox" name="" id="">
+                        <label for="">сахарозаменитель</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="checkbox" name="" id="">
+                        <label for="">питьевая вода</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="checkbox" name="" id="">
+                        <label for="">молоко</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="checkbox" name="" id="">
+                        <label for="">витамины</label>
+                    </div>
+                    <button class="submit-btn" id="submitBtn" type="submit">отправить заявку</button>
+                    <span class="noteForRequired">* — Обязательные поля</span>
+                </div>
+            </section>
+
+        </form>
+    </main>
+
+    <div class="clr"></div>
+
+    <div class="map">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="map-card">
+                    <h4>
+                        приглашаем
+                        к сотрудничеству
+                        дилеров!
+                    </h4>
+                    <p>
+                        ул. Большая
+                        Конюшенная, д. 19/8
+                    </p>
+                    <p>Санкт-Петербург</p>
+                </div>
+            </div>
+            <img class="map-pin" src="./img/map pin.png.png" alt="">
+        </div>
+    </div>
+    <div class="clr"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="./img/footer-logo 2.png" alt="">
+            </div>
+            <div class="col-md-4 footer-icon-block">
+                <div class="icons">
+                    <a href="#!">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#!">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 footer-logo-block">
+                <img src="./img/logo_html.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', e => {
+            e.preventDefault();
+            console.log('submitted!');
+        })
+    </script>
+    <script src="./aos/dist/aos.js"></script>
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

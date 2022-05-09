@@ -1,0 +1,86 @@
+// Colors
+$basic-green: #68B738;
+$basic-grey: #F2F2F2;
+$special-grey: #CDCDCD;
+$special-grey-2: #666666;
+$special-dark-grey: #444444;
+$dark-black: #000000;
+
+// Fonts 
+
+// Oswald regular
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: 'Oswald', sans-serif !important;
+  background-color: #fff;
+  color: #000000 !important;
+}
+
+.col-md-3,
+.col-md-4,
+.col-md-6,
+.col-md-9,
+.col-sm-3,
+.col-sm-6,
+.col-sm-9 {
+  float: left;
+}
+
+.clr {
+  clear: both;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin setBgImg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/* ====  SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $basic-grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6cf218;
+  border-radius: 3.5px;
+  box-shadow: 0 0 5px $special-dark-grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $basic-green;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
