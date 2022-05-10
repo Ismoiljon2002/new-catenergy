@@ -261,6 +261,7 @@ main > div > h2 {
   background-repeat: no-repeat;
   background-position: center center;
   height: 300px;
+  overflow: hidden;
 }
 
 .card-md-3 > img {
@@ -402,18 +403,17 @@ main > div > h2 {
   height: auto !important;
 }
 
-.map {
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../img/tablet-map.png);
+#map {
+  position: relative;
+  padding: 0 !important;
 }
 
 .map-card {
-  width: 90%;
-  height: 180px;
+  position: absolute;
+  width: 570px;
+  height: 200px;
   background-color: #fff;
-  margin-top: 110px;
+  margin: 95px 6vw;
 }
 
 .map-card > h4 {
@@ -431,10 +431,6 @@ main > div > h2 {
   color: #444444;
   padding: 50px 60px 20px 70px;
   margin-bottom: -50px;
-}
-
-.map-pin {
-  display: none;
 }
 
 /* Main Part Ends here */
@@ -554,8 +550,13 @@ footer {
   .bilo {
     margin: 340px 20px 0 !important;
   }
+  .map-card {
+    width: 450px;
+    height: 190px;
+    margin: 110px 5vw;
+  }
   .map-card > p {
-    padding: 50px 45px 20px;
+    padding: 50px 30px 20px;
   }
   footer {
     overflow: hidden;
@@ -659,11 +660,15 @@ footer {
   .dot {
     margin: 10px auto;
   }
+  .map-card {
+    width: 400px;
+    height: 170px;
+  }
   .map-card > h4 {
-    padding: 50px 40px 0;
+    padding: 45px 35px 0;
   }
   .map-card > p {
-    padding: 50px 25px 20px;
+    padding: 45px 15px 10px;
   }
 }
 
@@ -791,31 +796,22 @@ footer {
   .circle {
     margin: 0 33% 58px -38%;
   }
-  .map {
-    height: 580px;
-    position: relative;
-    background-position: bottom right;
-  }
   .map-card {
-    position: absolute;
+    position: static;
     width: 100%;
-    top: 0;
-    left: 0%;
+    height: 200px;
     margin: 0;
+    background-color: #F2F2F2;
   }
   .map-card > h4 {
     width: 27%;
+    padding: 55px 40px 0;
   }
   .map-card > p {
     width: 27%;
-    margin-left: 69%;
+    margin-left: 68%;
+    padding: 55px 15px 0px;
     text-align: right;
-  }
-  .map-pin {
-    position: absolute;
-    display: block;
-    top: 300px;
-    left: 30%;
   }
   .icons > a > i {
     font-size: 26px;
@@ -1021,14 +1017,9 @@ footer {
     margin: -70px auto 0;
     width: 500px !important;
   }
-  .map {
-    height: 470px;
-  }
-  .map-pin {
-    display: none;
-  }
   .map-card {
-    height: 110px;
+    background-color: #fff;
+    height: 120px;
     overflow: hidden;
   }
   .map-card > h4 {

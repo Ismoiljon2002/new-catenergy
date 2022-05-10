@@ -66,7 +66,8 @@
 
             <div class="col-md-3">
                 <div class="card">
-                    <img class="sm-cans" src="./img/catalog-pics/catalog-1-desktop 1.png" alt="">
+                    <img class="sm-cans" src="./img/catalog-pics/catalog-1-desktop 1.png" alt=""
+                        data-aos="zoom-out-down" data-aos-duration="900">
 
                     <h4>Cat Energy PRO 500 г</h4>
 
@@ -94,7 +95,8 @@
 
             <div class="col-md-3">
                 <div class="card">
-                    <img class="lg-cans" src="./img/catalog-pics/catalog-2-desktop 1.png" alt="">
+                    <img class="lg-cans" src="./img/catalog-pics/catalog-2-desktop 1.png" alt=""
+                        data-aos="zoom-out-down" data-aos-duration="900">
 
                     <h4>Cat Energy PRO 1000 г</h4>
 
@@ -122,7 +124,8 @@
 
             <div class="col-md-3">
                 <div class="card">
-                    <img class="sm-cans" src="./img/catalog-pics/catalog-3-desktop.png" alt="">
+                    <img class="sm-cans" src="./img/catalog-pics/catalog-3-desktop.png" alt="" data-aos="zoom-out-down"
+                        data-aos-duration="900">
 
                     <h4>Cat Energy PRO 500 г</h4>
 
@@ -150,7 +153,8 @@
 
             <div class="col-md-3">
                 <div class="card">
-                    <img class="lg-cans" src="./img/catalog-pics/catalog-4-desktop 1.png" alt="">
+                    <img class="lg-cans" src="./img/catalog-pics/catalog-4-desktop 1.png" alt=""
+                        data-aos="zoom-out-down" data-aos-duration="900">
 
                     <h4>Cat Energy PRO 1000 г</h4>
 
@@ -180,7 +184,8 @@
 
             <div class="col-md-3">
                 <div class="card">
-                    <img class="sm-cans" src="./img/catalog-pics/catalog-5-desktop.png" alt="">
+                    <img class="sm-cans" src="./img/catalog-pics/catalog-5-desktop.png" alt="" data-aos="zoom-out-down"
+                        data-aos-duration="900">
 
                     <h4>Cat Energy slim 500 г</h4>
 
@@ -208,7 +213,8 @@
 
             <div class="col-md-3">
                 <div class="card">
-                    <img class="lg-cans" src="./img/catalog-pics/catalog-6-desktop.png" alt="">
+                    <img class="lg-cans" src="./img/catalog-pics/catalog-6-desktop.png" alt="" data-aos="zoom-out-down"
+                        data-aos-duration="900">
 
                     <h4>Cat Energy slim 1000 г</h4>
 
@@ -236,7 +242,8 @@
 
             <div class="col-md-3">
                 <div class="card">
-                    <img class="sm-cans" src="./img/catalog-pics/catalog-7-desktop.png" alt="">
+                    <img class="sm-cans" src="./img/catalog-pics/catalog-7-desktop.png" alt="" data-aos="zoom-out-down"
+                        data-aos-duration="900">
 
                     <h4>Cat Energy slim 500 г</h4>
 
@@ -403,26 +410,24 @@
 
     <div class="clr"></div>
 
-    <div class="map">
-        <div class="container">
-            <div class="col-md-6">
-                <div class="map-card">
-                    <h4>
-                        приглашаем
-                        к сотрудничеству
-                        дилеров!
-                    </h4>
-                    <p>
-                        ул. Большая
-                        Конюшенная, д. 19/8
-                    </p>
-                    <p>Санкт-Петербург</p>
-                </div>
-            </div>
-            <img class="map-pin" src="./img/map pin.png.png" alt="">
+    <div id="map">
+        <div class="map-card">
+            <h4>
+                приглашаем
+                к сотрудничеству
+                дилеров!
+            </h4>
+            <p>
+                ул. Большая
+                Конюшенная, д. 19/8
+            </p>
+            <p>Санкт-Петербург</p>
         </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4678.564067508164!2d30.322606869311823!3d59.9389424462075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sen!2s!4v1652175841561!5m2!1sen!2s"
+            width="100%" height="400" style="border:0;" allowfullscreen loading=" lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="clr"></div>
 
     <footer class="footer">
         <div class="container">
@@ -450,6 +455,11 @@
 
     <script src="./aos/dist/aos.js"></script>
     <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
 
     <script src="./js/main.js"></script>
 </body>

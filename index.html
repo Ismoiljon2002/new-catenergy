@@ -75,7 +75,8 @@
 
             <img class="header-cover" src="./img/header-cover.png" alt="">
 
-            <img class="header-can" src="./img/index-can-tablet 1.png" alt="">
+            <img class="header-can" src="./img/index-can-tablet 1.png" alt="" data-aos="zoom-in-up"
+                data-aos-duration="800" />
         </div>
         <div class="clr"></div>
     </header>
@@ -83,7 +84,7 @@
     <main>
         <div class="container">
             <div class="col-md-6 card-md-6">
-                <div class="catalog-card">
+                <div class="catalog-card" data-aos="fade-right" data-aos-duration="800">
                     <div class="container">
                         <div class="col-sm-3">
                             <img id="sitting-cat" src="./img/sitting-cat.png" alt="">
@@ -101,7 +102,7 @@
             </div>
 
             <div class="col-md-6 card-md-6">
-                <div class="catalog-card">
+                <div class="catalog-card" data-aos="fade-left" data-aos-duration="800">
                     <div class="container">
                         <div class="col-sm-3">
                             <img class="bars" src="./img/bars.png" alt="">
@@ -124,9 +125,9 @@
 
             <div class="col-md-3">
                 <div class="card-md-3 card-md-3-1 ">
-                    <img src="./img/leaf-sq.png" alt="">
+                    <img src="./img/leaf-sq.png" alt="" data-aos="zoom-in" data-aos-duration="700">
 
-                    <p>
+                    <p data-aos="fade-up" data-aos-duration="700">
                         Функциональное питание
                         содержит только полезные
                         питательные вещества.
@@ -135,9 +136,9 @@
             </div>
             <div class="col-md-3">
                 <div class="card-md-3 card-md-3-2">
-                    <img src="./img/water-sq.png" alt="">
+                    <img src="./img/water-sq.png" alt="" data-aos="zoom-in" data-aos-duration="700">
 
-                    <p>
+                    <p data-aos="fade-up" data-aos-duration="700">
                         Выпускается в виде порошка,
                         который нужно лишь залить
                         кипятком и готово.
@@ -146,9 +147,9 @@
             </div>
             <div class="col-md-3">
                 <div class="card-md-3 card-md-3-3">
-                    <img src="./img/knife-sq.png" alt="">
+                    <img src="./img/knife-sq.png" alt="" data-aos="zoom-in" data-aos-duration="700">
 
-                    <p>
+                    <p data-aos="fade-up" data-aos-duration="700">
                         Замените один-два приема
                         обычной еды на наше
                         функциональное питание.
@@ -157,9 +158,9 @@
             </div>
             <div class="col-md-3">
                 <div class="card-md-3 card-md-3-4">
-                    <img src="./img/clock-sq.png" alt="">
+                    <img src="./img/clock-sq.png" alt="" data-aos="zoom-in" data-aos-duration="700">
 
-                    <p>
+                    <p data-aos="fade-up" data-aos-duration="700">
                         Уже через месяц наслаждайтесь
                         изменениями к лучшему
                         вашего питомца!
@@ -198,7 +199,8 @@
                 </div>
 
                 <div class="col-md-6 half-cats-block">
-                    <img class="half-cats" src="./img/half-cats-tablet.png" alt="">
+                    <img class="half-cats" src="./img/half-cats-tablet.png" alt="" data-aos="zoom-in-up"
+                        data-aos-duration="1100">
 
                     <h4 class="bilo">было</h4>
 
@@ -216,26 +218,24 @@
 
         <div class="clr"></div>
 
-        <div class="map">
-            <div class="container">
-                <div class="col-md-6">
-                    <div class="map-card">
-                        <h4>
-                            приглашаем
-                            к сотрудничеству
-                            дилеров!
-                        </h4>
-                        <p>
-                            ул. Большая
-                            Конюшенная, д. 19/8
-                        </p>
-                        <p>Санкт-Петербург</p>
-                    </div>
-                </div>
-                <img class="map-pin" src="./img/map pin.png.png" alt="">
+        <div id="map">
+            <div class="map-card">
+                <h4>
+                    приглашаем
+                    к сотрудничеству
+                    дилеров!
+                </h4>
+                <p>
+                    ул. Большая
+                    Конюшенная, д. 19/8
+                </p>
+                <p>Санкт-Петербург</p>
             </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4678.564067508164!2d30.322606869311823!3d59.9389424462075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sen!2s!4v1652175841561!5m2!1sen!2s"
+                width="100%" height="400" style="border:0;" allowfullscreen loading=" lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="clr"></div>
     </main>
 
     <footer class="footer">
@@ -265,6 +265,11 @@
     <script src="./aos/dist/aos.js"></script>
     <script src="./Bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
 </body>
 
 </html>
